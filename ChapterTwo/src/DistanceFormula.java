@@ -22,7 +22,14 @@ public class DistanceFormula {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//TODO Write Code.
+		double x1 = 6;
+		double x2 = -3;
+		double y1 = 7;
+		double y2 = -2;
+		double distance = 0.0;
+		distance = Math.sqrt(Math.pow((x1-x2), 2) + Math.pow((y1-y2), 2));
+		String distanceString = String.format("The distance between the two points is: %.2f", distance);
+		System.out.println(distanceString);
 	}
 
 }

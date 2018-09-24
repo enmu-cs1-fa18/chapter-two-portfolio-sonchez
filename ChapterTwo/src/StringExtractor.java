@@ -20,11 +20,25 @@ public class StringExtractor {
 		final String inputString = "The quick brown fox jumps over the lazy dog.";
 		final String outputString = "Tempus fugit";		
 		
-		// TODO Write code.
+		String firstWord = Character.toString(inputString.charAt(0));
+		firstWord = firstWord + Character.toString(inputString.charAt(2));
+		firstWord = firstWord+ Character.toString(inputString.charAt(22));
+		firstWord = firstWord + Character.toString(inputString.charAt(23));
+		firstWord = firstWord + Character.toString(inputString.charAt(21));
+		firstWord = firstWord + Character.toString(inputString.charAt(24));
+		firstWord = firstWord + Character.toString(inputString.charAt(25));
 		
+		String secondWord = Character.toString(inputString.charAt(16));
+		secondWord = secondWord + Character.toString(inputString.charAt(5));
+		secondWord = secondWord + Character.toString(inputString.charAt(42));
+		secondWord = secondWord + Character.toString(inputString.charAt(6));
+		secondWord = secondWord + Character.toString(inputString.charAt(31));
+		secondWord = secondWord + Character.toString(inputString.charAt(43));
+
 				
-		
-		
+		System.out.println("my output: " + firstWord + secondWord);
+		System.out.println(inputString);
+		System.out.println(outputString);
 	}
 
 }

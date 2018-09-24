@@ -3,9 +3,9 @@ import java.util.Scanner;
 /**
  * Calculates how many full cases can be filled with a given number of cans.
  * 
- * @author
+ * @author chris sanchez
  * @version
- * @date
+ * @date 09/18/2018
  */
 public class CaseCounterEnhanced {
 	/*
@@ -27,8 +27,20 @@ public class CaseCounterEnhanced {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-				
-		//TODO Write Code.
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter the total number of cans!");
+		int userCans = scan.nextInt();
+		System.out.println("Thanks! Please enter the can value in dollars!");
+		int dollarValue = scan.nextInt();
+		final int caseMax = 12;
+		int maxFullCases = 0;
+		int leftOverCans = 0;
+		maxFullCases = (userCans / caseMax);
+		leftOverCans = (userCans % caseMax);
+		double totalDollarValue = (dollarValue * userCans);
+		System.out.println("The amount of full cases is: " + maxFullCases);
+		System.out.println("The left over amount of cans is: "+ leftOverCans);
+		System.out.printf("The dollar value of cans is: $%.2f.%n", totalDollarValue);
 	}
 
 }

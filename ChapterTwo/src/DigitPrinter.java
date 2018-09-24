@@ -5,9 +5,9 @@
 /**
  * Takes any number up to 3 digits and print out each digit individually.
  * 
- * @author
+ * @author chris sanchez
  * @version
- * @date
+ * @date 09/17/2018
  *
  */
 public class DigitPrinter {
@@ -32,8 +32,16 @@ public class DigitPrinter {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//TODO Write Code.
-
+		int numOne = 0;
+		int numTwo = 0;
+		int numThree = 0;
+		final int MY_NUMBER = 349;
+		numOne = MY_NUMBER / 100;
+		numTwo = ((MY_NUMBER / 10) % 10);
+		numThree = ((MY_NUMBER % 10));
+		System.out.println("The first number is: " + numOne);
+		System.out.println("The second number is: " + numTwo);
+		System.out.println("The third number is: " + numThree);
 	}
 
 }

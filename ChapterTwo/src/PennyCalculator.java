@@ -10,9 +10,35 @@ public class PennyCalculator {
 	  *    Print out each value on a different line.  
 	 */
 	public static void main(String[] args) {
-		// TODO Write code here.
+		int dollars = 0;
+		final int dollarValue = 100;
+		int quarters = 0;
+		final int quarterValue = 25;
+		int dimes = 0;
+		final int dimeValue = 10;
+		int nickels = 0;
+		final int nickelValue = 5;
+		int pennies = 0;
+		final int pennyValue = 1;
+		int money = 458;
 		
+		dollars = (money / dollarValue);
+		money = (money % dollarValue);
+		quarters = (money / quarterValue);
+		money = (money % quarterValue);
+		dimes = (money / dimeValue);
+		money = (money % dimeValue);
+		nickels = (money / nickelValue);
+		money = (money % nickelValue);
+		pennies = (money / pennyValue);
+		int totalCoins = (quarters + dimes + nickels + pennies);
 		
+		System.out.println("dollars: " + dollars);
+		System.out.println("quarters: " + quarters);
+		System.out.println("dimes: " + dimes);
+		System.out.println("nickels: " + nickels);
+		System.out.println("pennies: " + pennies);
+		System.out.println("Total number of coins: " + totalCoins);
 	}
 
 }
